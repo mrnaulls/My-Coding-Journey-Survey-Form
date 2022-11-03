@@ -1,0 +1,55 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Build a Survey Form</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <h1 id="title">Welcome to My Journey of Coding</h1>
+    <p id="description"><b>Thank you for taking the time to help me improve my coding journey. Please feel free to leave your information down below for a celebratory thank you!</p></b>
+    <form id="survey-form">
+      <fieldset style(20px) solid black; width: 10px;>
+        <label id="name-label">First Name: <input id="name" type="text" placeholder="Enter Your Name Here" required /></label>
+      </fieldset>
+      <fieldset style(20px) solid black; width: 10px;>
+        <label id="email-label">Email: <input id="email" type="email" placeholder="Enter Your Email Here" required /></label>
+      </fieldset>
+      <fieldset style(20px) solid black; width: 10px;>
+        <label id="number-label">Age: <input id="number" type="number" min="10" max="100" placeholder="Age" /></label>
+      </fieldset>
+      <fieldset>
+        <label for="dropdown">Which Option best describes your Current Role? <select id="dropdown">
+          <option value=""> Select Current Role</option>
+          <option value="1"> Chief Executive Officer</option>
+          <option value="2"> Account Manager</option>
+          <option value="3"> Recruiter</option>
+        </select>
+        </fieldset>
+        <fieldset>
+          <label for="recommend" select="name"> Would you recommend freeCodeCamp.org? 
+            <input id="recommend" type="radio" value="1" name="recommend" class="recommend"> Definitely </input>
+            <input id="recommend" type="radio" value="2" name="recommend" class="recommend"> Maybe </input>
+            <input id="recommend" type="radio" value="3" name="recommend" class="recommend"> Not Sure </input>
+        </fieldset>
+        <fieldset>
+          <label for="recommend"> What would you like to see improved?
+            <input id="recommend" type="checkbox" value="1" name="recommend" class="recommend"> Frontend
+            <input id="recommend" type="checkbox" value="2" name="recommend" class="recommend"> Backend
+            <input id="recommend" type="checkbox" value="3" name="recommend" class="recommend"> Data Analytics
+            <input id="recommend" type="checkbox" value="4" name="recommend" class="recommend"> Challanges
+            <input id="recommend" type="checkbox" value="5" name="recommend" class="recommend"> Open Source
+            <input id="recommend" type="checkbox" value="6" name="recommend" class="recommend"> Videos
+            <input id="recommend" type="checkbox" value="7" name="recommend" class="recommend"> Meetups
+            </label>
+          </fieldset>
+          <fieldset>
+            <label for="feedback" class="feedback"> Any Comments or Suggestions?
+              <textarea id="textarea" name="submit" rows="3" cols="30" placeholder="I like coding on the beach"></textarea>
+          </fieldset>
+          <fieldset>
+            <input id="submit" type="submit" class="submit">
+          </fieldset>
+          </form>
+        </body>
+      </head>
+    </html>
